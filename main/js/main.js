@@ -114,4 +114,13 @@ jQuery(document).ready(function($) {
         });
 
 
+        $( "#form-submit" ).click(function() {
+
+            const form = new FormData(document.forms['contact']);
+            // alert(JSON.stringify(form))
+            console.log(document.forms)
+            // alert( "Handler for .click() called." );
+          });
+
+
 });
