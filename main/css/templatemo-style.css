@@ -237,8 +237,8 @@ header {
 }
 
 .sidebar-navigation .logo img {
-  max-width: 330px;
-  max-height: 330px;
+  max-width: 270px;
+  max-height: 270px;
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
@@ -598,6 +598,7 @@ element.style {
 }
 
 #featured .item .image {
+  max-height: 850px;
   position: relative;
 }
 
