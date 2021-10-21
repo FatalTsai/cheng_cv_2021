@@ -263,11 +263,9 @@ header {
 } */
 
 
-element.style {
-}
 .sidebar-navigation nav {
     position: relative;
-    top: 40%;
+    top: 5%;
     left: 0%;
     /* -webkit-transform: translateX(-60%) translateY(-60%); */
     /* -moz-transform: translateX(-60%) translateY(-60%); */
@@ -910,6 +908,19 @@ element.style {
 
 /* Contact Style */
 
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #aaa;
+  /* margin: 20px 0; */
+
+  /* padding: 10px; */
+  width: 100%;
+  min-height: 500px;
+  border: 2px #ccc solid;
+  color: #fff;
+}
 #contact {
   padding-top: 0px;
 }
