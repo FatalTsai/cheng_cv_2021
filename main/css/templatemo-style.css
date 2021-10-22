@@ -886,7 +886,12 @@ element.style {
 #blog .tabgroup ul li img {
   float: left;
   margin-right: 30px;
-  max-width: 100%;
+  /* max-width: 100%; */
+  display: block;
+  max-width:300px;
+  max-height:400px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 #blog .tabgroup ul li .text-content {
