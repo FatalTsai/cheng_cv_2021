@@ -888,8 +888,8 @@ element.style {
   margin-right: 30px;
   /* max-width: 100%; */
   display: block;
-  max-width:300px;
-  max-height:400px;
+  max-width:450px;
+  max-height:500px;
   width: auto;
   height: auto;
   overflow: hidden;
