@@ -5,6 +5,21 @@ Sentra Template
 https://templatemo.com/tm-518-sentra
 
 */
+
+.trybox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #aaa;
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+  /* height: auto; */
+  aspect-ratio: 4 / 3;
+  /* min-height: 200px; */
+  border: 2px #ccc solid;
+  color: #fff;
+}
 .box {
   display: flex;
   align-items: center;
