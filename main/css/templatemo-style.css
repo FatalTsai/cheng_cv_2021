@@ -6,6 +6,23 @@ https://templatemo.com/tm-518-sentra
 
 */
 
+
+#test1 {
+  /* width: 200px;
+  height: 200px;
+  border: 1px solid #c3c3c3; */
+  display: col;
+  flex-wrap: wrap;
+}
+
+#test1 div {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
 .trybox {
   display: flex;
   align-items: center;
@@ -213,25 +230,45 @@ header {
 }
 
 .sidebar-navigation .logo {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 350px;
-  line-height: 100px;
+  line-height: 1;
   background-color: #45489a;
   padding: 20px;
   text-align: center;
 }
 
-.sidebar-navigation .logo span {
+.sidebar-navigation .logo .ability {
+  font-size: 1.0vw;
+  color: rgba(182, 181, 181, 1);
+  line-height: 0.9;
+ 
+}
+@media screen and (min-width: 1200px) {
+  .sidebar-navigation .logo .ability {
+     font-size: 15px;
+  }
+}
+
+.sidebar-navigation .logo .name {
   text-decoration: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 2vw;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  height: 100px;
+  line-height: 1.5;
+  margin-top:40px;
+  height: 40px;
   width: 100%;
   display: inline-block;
+  
+  }
+  @media screen and (min-width: 1200px) {
+    .sidebar-navigation .logo .name  {
+       font-size: 20px;
+    }
   /* border: 1px solid rgba(250,250,250,0.5); */
 }
 .sidebar-navigation .logo a {
@@ -289,8 +326,7 @@ header {
 } */
 
 
-element.style {
-}
+
 .sidebar-navigation nav {
     position: relative;
     top: 40%;
