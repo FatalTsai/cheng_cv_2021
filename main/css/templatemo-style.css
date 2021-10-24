@@ -7,7 +7,7 @@ https://templatemo.com/tm-518-sentra
 */
 
 
-#test1 {
+#sidebar {
   /* width: 200px;
   height: 200px;
   border: 1px solid #c3c3c3; */
@@ -15,8 +15,8 @@ https://templatemo.com/tm-518-sentra
   flex-wrap: wrap;
 }
 
-#test1 div {
-  width: 100%;
+#sidebar div {
+  /* width: 100%; */
   height: auto;
 }
 

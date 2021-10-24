@@ -19,7 +19,8 @@ https://templatemo.com/tm-518-sentra
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <!-- <link rel="stylesheet" href="css\bs5\sbootstrap.css"> -->
-        
+        <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -30,6 +31,7 @@ https://templatemo.com/tm-518-sentra
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
     </head>
 
 <body>
@@ -59,23 +61,29 @@ https://templatemo.com/tm-518-sentra
         </header>
 
                     <!-- https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_flex-wrap -->
+                    <!-- 
+                        20 tooltips
+                        https://www.appcues.com/blog/73-tooltip-plugins-made-with-jquery-css-javascript-or-more
 
-        <div id="test1" class="sidebar-navigation flex-container flex-start hidde-sm hidden-xs">
+                        tephanwagner
+
+                        https://stephanwagner.me/jBox/demos
+                     -->
+
+        <div id="sidebar" class="sidebar-navigation flex-container flex-start hidde-sm hidden-xs">
 
                 <!-- <div style="background-color:coral;">A</div> -->
                 <div class="logo ">
                     <img src="img\part2\個人照片\S__235405325_crop.jpg" alt="">
                     <span class="name" href="#">Jordan Cheng</span>
-                    <span class="ability">半導體材料,</span>
-                    <!-- <span class="tooltiptext">
-                        氧化銅修飾氧化鋅奈米結構((CuO /ZnO nanostructure)在血糖感測器之應用
-                        氮化鎵材料(GaN)光電物理特性分析
-                        氮化鎵材料(GaN)在快充的應用分析
-                        有機金屬框架材料(MOF):
-                        MIL-53吸附水中汙染物(磷酸鹽)應用
-                        MOF-199修飾於泡沫鎳(Nickel Foam)感測應用
-                        ZIF-67修飾氧化鋅奈米結構感測應用
-                    </span> -->
+                    <span class="ability"  data-toggle="tooltip" title="氧化銅修飾氧化鋅奈米結構((CuO /ZnO nanostructure)在血糖感測器之應用
+                    氮化鎵材料(GaN)光電物理特性分析
+                    氮化鎵材料(GaN)在快充的應用分析
+                    有機金屬框架材料(MOF):
+                    MIL-53吸附水中汙染物(磷酸鹽)應用
+                    MOF-199修飾於泡沫鎳(Nickel Foam)感測應用
+                    ZIF-67修飾氧化鋅奈米結構感測應用!">半導體材料,</span>
+
                         <!-- 氧化銅修飾氧化鋅奈米結構((CuO /ZnO nanostructure)在血糖感測器之應用
                         氮化鎵材料(GaN)光電物理特性分析
                         氮化鎵材料(GaN)在快充的應用分析
@@ -83,11 +91,15 @@ https://templatemo.com/tm-518-sentra
                         MIL-53吸附水中汙染物(磷酸鹽)應用
                         MOF-199修飾於泡沫鎳(Nickel Foam)感測應用
                         ZIF-67修飾氧化鋅奈米結構感測應用 -->
-                        <span class="ability">儀器操作,</span>
+                        <span class="ability" data-toggle="tooltip" title="電化學分析儀(electrochemical workstation system)量測cyclic voltammetry (CV)
+                        光致發光光譜儀(PL)量測氮化鎵材料(GaN)特性
+                        拉曼光譜儀(Raman)量測">儀器操作,</span>
                         <!-- 電化學分析儀(electrochemical workstation system)量測cyclic voltammetry (CV)
                         光致發光光譜儀(PL)量測氮化鎵材料(GaN)特性
                         拉曼光譜儀(Raman)量測 -->
-                        <span class="ability">材料特性分析</span>
+                        <span class="ability" data-toggle="tooltip" title="XRD材料晶體結構分析
+                        SEM掃描式電子顯微鏡
+                        EDS材料元素分佈分析">材料特性分析(touch me)</span>
                         <!-- XRD材料晶體結構分析
                         SEM掃描式電子顯微鏡
                         EDS材料元素分佈分析 -->
