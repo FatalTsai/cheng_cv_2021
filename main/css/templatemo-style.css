@@ -93,7 +93,20 @@ https://templatemo.com/tm-518-sentra
 }
 
 
+.item  .text-content p,
+.item  .text-content span{
+  /* ignore honor's word */
+   opacity: 0;
+}
 
+@media only screen and (max-width: 600px) {
+  .item  .text-content p,
+.item  .text-content span{
+  /* ignore honor's word */
+   display: none;
+}
+
+}
 
 .trybox {
   display: flex;
