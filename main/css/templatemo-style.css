@@ -814,7 +814,7 @@ header {
 
 /* Projects Style */
 
-#projects {
+#projects ,#life{
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 50px;
