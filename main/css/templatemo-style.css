@@ -28,7 +28,7 @@ https://templatemo.com/tm-518-sentra
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 32px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -77,7 +77,7 @@ https://templatemo.com/tm-518-sentra
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #45489a;
 }
 #sidebar {
   /* width: 200px;
