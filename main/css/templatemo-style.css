@@ -122,7 +122,9 @@ https://templatemo.com/tm-518-sentra
   border: 2px #ccc solid;
   /* color: #fff; */
 }
-
+.longbox{
+  aspect-ratio: 8.7 / 3;
+}
 .trybox img{
   width: 100%;
   height: 100%;
