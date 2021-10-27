@@ -14,7 +14,7 @@ intro :https://codepen.io/zegzwaos/pen/NWqYjwG
 
  */
 
-
+ @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
  @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
  @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
  /* @font-face {
@@ -28,6 +28,97 @@ intro :https://codepen.io/zegzwaos/pen/NWqYjwG
        url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.ttf) format('truetype');
 } */
 
+.mb-100{
+  margin-bottom: 100px;
+}
+.markdown-body .highlight pre, .markdown-body pre{
+  background-color: #6f73e449;
+  /* 45489a */
+}
+/*== start of code for tooltips ==*/
+.tool {
+  cursor: help;
+  position: relative;
+}
+
+
+/*== common styles for both parts of tool tip ==*/
+.tool::before,
+.tool::after {
+  left: 120%;
+  opacity: 0;
+  position: absolute;
+  z-index: -100;
+}
+.tool::before{
+  left: 70%;
+
+}
+
+.tool:hover::before,
+.tool:focus::before,
+.tool:hover::after,
+.tool:focus::after {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  z-index: 100; 
+}
+
+
+/*== pointer tip ==*/
+.tool::before {
+  border-style: solid;
+  border-width: 1em 0.75em 0 0.75em;
+  border-color: #27271b transparent transparent transparent;
+  bottom: 100%;
+  content: "";
+  margin-left: -0.5em;
+  transition: all .65s cubic-bezier(.84,-0.18,.31,1.26), opacity .65s .5s;
+  transform:  scale(.6) translateY(-90%);
+} 
+
+.tool:hover::before,
+.tool:focus::before {
+  transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+}
+
+
+/*== speech bubble ==*/
+.tool::after {
+  background: #3E474F;
+  border-radius: .25em;
+  bottom: 180%;
+  color: #EDEFF0;
+  content: attr(data-tip);
+  margin-left: -8.75em;
+  padding: 1em;
+  transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+  transform:  scale(.6) translateY(50%);  
+  width: 20.5em;
+  white-space: pre-line;
+  font-family: 'cwTeXYen', sans-serif;
+  text-align:left;
+
+}
+
+.tool:hover::after,
+.tool:focus::after  {
+  transition: all .65s cubic-bezier(.84,-0.18,.31,1.26);
+}
+
+.tool:hover{
+  /* transition: all .65s cubic-bezier(.84,-0.18,.31,1.26); */
+  color:yellow !important;
+  /* transform: scale(2); */
+}
+
+@media (max-width: 760px) {
+.tool::after { 
+      font-size: .75em;
+      margin-left: -5em;
+      width: 10em; 
+}
+}
 .owl-theme .item .image{
   /* aspect-ratio: 9/16; */
   /* min-height: 450px; */
@@ -243,6 +334,23 @@ p {
   display: inline-block;
   margin-right: 50px;
 }
+@media(max-width:767px) {
+  .section-heading h1 {
+    margin-right: 0px;
+  }
+}
+@media(max-width:400px) {
+  .section-heading h1 {
+    margin-right: 0px;
+    font-size: 35px;
+    }
+  }
+  @media(max-width:350px) {
+    .section-heading h1 {
+      margin-right: 0px;
+      font-size: 32px;
+      }
+    }
 
 .section-heading em {
   font-style: normal;
@@ -744,6 +852,13 @@ header {
 
 #featured .section-heading {
   margin-right: 20%;
+}
+@media(max-width: 767px) {
+  #featured .section-heading {
+
+    margin-right: 0%;
+  }
+  
 }
 
 #featured .content-section {
