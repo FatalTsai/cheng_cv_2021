@@ -23,6 +23,7 @@ jQuery(document).ready(function($) {
             event.preventDefault();
             $('#main-nav').toggleClass("open");
         });
+        // https://www.codegrepper.com/code-examples/javascript/on+click+toggle+class+jquery
 
 
         $('.tabgroup > div').hide();
