@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
           });
 
         $('#nav-toggle').on('click', function (event) {
-            event.preventDefault();
+            // event.preventDefault();
             $('#main-nav').toggleClass("open");
         });
         // https://www.codegrepper.com/code-examples/javascript/on+click+toggle+class+jquery
